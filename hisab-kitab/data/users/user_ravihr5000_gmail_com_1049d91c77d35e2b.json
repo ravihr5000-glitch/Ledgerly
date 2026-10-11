@@ -1,0 +1,233 @@
+{
+  "ownerEmail": "ravihr5000@gmail.com",
+  "profile": {
+    "name": "Ravi",
+    "email": "ravihr5000@gmail.com",
+    "avatarUrl": "",
+    "updatedAt": "2026-10-08T06:16:05.000Z"
+  },
+  "preferences": {
+    "selectedPeriod": "Last 3 months",
+    "totalAssets": 0,
+    "totalLiabilities": 0,
+    "netWorthConfigured": false,
+    "resetTimestamp": "2026-10-07T15:56:17.341Z",
+    "timezone": "America/Los_Angeles"
+  },
+  "categories": [
+    "Expense",
+    "Income",
+    "Needs review",
+    "Other",
+    "Client Revenue",
+    "Groceries",
+    "Utilities",
+    "Books"
+  ],
+  "accounts": [
+    "Main Checking",
+    "Everyday Visa",
+    "Rewards Card",
+    "Cash"
+  ],
+  "tags": [
+    "Coffee"
+  ],
+  "transactions": [
+    {
+      "id": "tx_1791726921638_gc9ddqf",
+      "date": "2026-10-08",
+      "merchant": "Book Store",
+      "category": "Books",
+      "paymentMode": "Cash",
+      "account": "Cash",
+      "modeId": "business",
+      "tags": [],
+      "amount": 800,
+      "type": "expense",
+      "receiptAttached": false,
+      "fingerprint": "2026-10-08|book store|800.00|cash",
+      "source": "manual",
+      "createdAt": "2026-10-11T13:55:21.638Z"
+    },
+    {
+      "id": "tx_1791726921625_bwcw2cd",
+      "date": "2026-10-09",
+      "merchant": "City Power Electric",
+      "category": "Utilities",
+      "paymentMode": "Bank Transfer",
+      "account": "Bank Transfer",
+      "modeId": "business",
+      "tags": [],
+      "amount": 2000,
+      "type": "expense",
+      "receiptAttached": false,
+      "fingerprint": "2026-10-09|city power electric|2000.00|bank transfer",
+      "source": "manual",
+      "createdAt": "2026-10-11T13:55:21.625Z"
+    },
+    {
+      "id": "tx_1791726921613_nftsth5",
+      "date": "2026-10-10",
+      "merchant": "Supermarket Cashback",
+      "category": "Groceries",
+      "paymentMode": "UPI",
+      "account": "UPI",
+      "modeId": "business",
+      "tags": [],
+      "amount": 500,
+      "type": "income",
+      "receiptAttached": false,
+      "fingerprint": "2026-10-10|supermarket cashback|500.00|upi",
+      "source": "manual",
+      "createdAt": "2026-10-11T13:55:21.613Z"
+    },
+    {
+      "id": "tx_1791726921597_fhppusr",
+      "date": "2026-10-10",
+      "merchant": "Fresh Foods Supermarket",
+      "category": "Groceries",
+      "paymentMode": "UPI",
+      "account": "UPI",
+      "modeId": "business",
+      "tags": [],
+      "amount": 3500,
+      "type": "expense",
+      "receiptAttached": false,
+      "fingerprint": "2026-10-10|fresh foods supermarket|3500.00|upi",
+      "source": "manual",
+      "createdAt": "2026-10-11T13:55:21.597Z"
+    }
+  ],
+  "budgets": [
+    {
+      "id": "bgt_1791726909479_cne03",
+      "name": "Groceries",
+      "category": "Groceries",
+      "monthlyLimit": 10000,
+      "active": true,
+      "date": "2026-10-11",
+      "createdAt": "2026-10-11T13:55:09.479Z"
+    },
+    {
+      "id": "bgt_1791726914775_2pscm",
+      "name": "Utilities",
+      "category": "Utilities",
+      "monthlyLimit": 5000,
+      "active": true,
+      "date": "2026-10-11",
+      "createdAt": "2026-10-11T13:55:14.775Z"
+    }
+  ],
+  "goals": [],
+  "recurring": [],
+  "ignoredPatterns": [],
+  "rules": [],
+  "documents": [
+    {
+      "id": "doc_1791475245683_xfju4",
+      "filename": "1791475245669_2bsih2_Ledgerly_Payment_Receipt_Confirmation.png",
+      "originalName": "Ledgerly Payment Receipt Confirmation.png",
+      "mimeType": "image/png",
+      "sizeBytes": 1151067,
+      "source": "upload",
+      "status": "stored",
+      "storagePath": "/app/applet/data/vault/1791475245669_2bsih2_Ledgerly_Payment_Receipt_Confirmation.png",
+      "createdAt": "2026-10-08T16:00:45.683Z"
+    }
+  ],
+  "driveSync": {
+    "lastSyncTimestamp": null,
+    "status": "idle",
+    "folderName": "Ledgerly Financial Inbox",
+    "processedFileIds": [],
+    "stats": {
+      "imported": 0,
+      "duplicates": 0,
+      "review": 0,
+      "errors": 0
+    }
+  },
+  "modes": [
+    {
+      "id": "business",
+      "name": "Business",
+      "description": "Company operations, revenues, vendor payouts & operational costs",
+      "icon": "Briefcase",
+      "color": "#6558D3",
+      "startingBalance": -10000,
+      "categories": [
+        "Expense",
+        "Other"
+      ],
+      "settings": {
+        "allowReceipts": true,
+        "allowTags": true,
+        "allowNotes": true
+      },
+      "isDefault": true,
+      "createdAt": "2026-10-07T17:12:12.615Z"
+    },
+    {
+      "id": "personal",
+      "name": "Personal",
+      "description": "Household living expenses, personal savings, groceries & bills",
+      "icon": "User",
+      "color": "#10B981",
+      "startingBalance": 0,
+      "categories": [
+        "Expense",
+        "Other"
+      ],
+      "settings": {
+        "allowReceipts": true,
+        "allowTags": true,
+        "allowNotes": true
+      },
+      "isDefault": true,
+      "createdAt": "2026-10-07T17:12:12.615Z"
+    },
+    {
+      "id": "combined",
+      "name": "Combined",
+      "description": "Consolidated holistic overview combining all financial modes",
+      "icon": "Layers",
+      "color": "#3B82F6",
+      "startingBalance": 0,
+      "categories": [
+        "Expense",
+        "Other"
+      ],
+      "settings": {
+        "allowReceipts": true,
+        "allowTags": true,
+        "allowNotes": true
+      },
+      "isDefault": true,
+      "createdAt": "2026-10-07T17:12:12.615Z"
+    }
+  ],
+  "activeModeId": "business",
+  "shareConfig": {
+    "enabled": true,
+    "token": "view_1791527272623_1j69ucjv70nx10no",
+    "tokens": [
+      "view_1791525373616_86prjb6thy7omhqg",
+      "view_1791525724571_pyteorjytwyzc6u2",
+      "view_1791526701736_trfi0ycinkzdpaz2",
+      "view_1791527167424_b19ojm7xqr1fkkf8",
+      "view_1791527179620_1to7zrb4v5nc15e3",
+      "view_1791527272623_1j69ucjv70nx10no"
+    ],
+    "createdAt": "2026-10-09T06:27:52.623Z",
+    "allowModes": [
+      "all"
+    ]
+  },
+  "securityConfig": {
+    "pinEnabled": false,
+    "pinHash": "",
+    "recoveryCodeHash": "",
+    "updatedAt": "2026-10-09T09:32:32.718Z"
+  }
+}

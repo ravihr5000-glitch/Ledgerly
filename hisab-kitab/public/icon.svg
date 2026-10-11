@@ -1,0 +1,41 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512" width="512" height="512">
+  <defs>
+    <linearGradient id="pwa-bg-grad" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#7C6DF0"/>
+      <stop offset="100%" stop-color="#4F46E5"/>
+    </linearGradient>
+    <linearGradient id="pwa-card-grad" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#FFFFFF" stop-opacity="0.95"/>
+      <stop offset="100%" stop-color="#F3F4F6" stop-opacity="0.90"/>
+    </linearGradient>
+    <filter id="pwa-shadow" x="-10%" y="-10%" width="125%" height="125%">
+      <feDropShadow dx="0" dy="16" stdDeviation="24" flood-color="#1E1B4B" flood-opacity="0.35"/>
+    </filter>
+  </defs>
+
+  <!-- Base Rounded Background -->
+  <rect width="512" height="512" rx="112" fill="url(#pwa-bg-grad)"/>
+
+  <!-- Inner Elevated Card Symbol -->
+  <g filter="url(#pwa-shadow)">
+    <rect x="96" y="112" width="320" height="288" rx="36" fill="url(#pwa-card-grad)"/>
+    
+    <!-- Ledger Top Accent Strip -->
+    <path d="M96 148 C96 128.1 112.1 112 132 112 L380 112 C399.9 112 416 128.1 416 148 L416 172 L96 172 Z" fill="#6558D3"/>
+    
+    <!-- Card Chip / Brand Accent -->
+    <circle cx="148" cy="142" r="8" fill="#FBBF24"/>
+    <circle cx="172" cy="142" r="8" fill="#34D399"/>
+    
+    <!-- Growth Trend Bars -->
+    <rect x="144" y="290" width="36" height="60" rx="8" fill="#CBD5E1"/>
+    <rect x="196" y="240" width="36" height="110" rx="8" fill="#A5B4FC"/>
+    <rect x="248" y="265" width="36" height="85" rx="8" fill="#818CF8"/>
+    <rect x="300" y="200" width="36" height="150" rx="8" fill="#6558D3"/>
+    <rect x="352" y="225" width="20" height="125" rx="8" fill="#10B981"/>
+
+    <!-- Upward Trend Arrow -->
+    <path d="M148 270 L214 220 L266 245 L340 185" fill="none" stroke="#6558D3" stroke-width="8" stroke-linecap="round" stroke-linejoin="round"/>
+    <polygon points="340,175 358,185 342,201" fill="#6558D3"/>
+  </g>
+</svg>

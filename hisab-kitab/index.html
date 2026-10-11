@@ -1,0 +1,84 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Ledgerly Personal Finance</title>
+    <meta name="description" content="Personal finance management web app with transaction tracking, budgets, recurring detection, and custom financial modes." />
+    <meta property="og:title" content="Ledgerly Personal Finance" />
+    <meta property="og:description" content="Personal finance management web app with transaction tracking, budgets, recurring detection, and custom financial modes." />
+    <meta property="og:type" content="website" />
+    <meta name="twitter:card" content="summary_large_image" />
+    <meta name="theme-color" content="#6558D3" />
+    <meta name="mobile-web-app-capable" content="yes" />
+    <meta name="apple-mobile-web-app-capable" content="yes" />
+    <meta name="apple-mobile-web-app-status-bar-style" content="default" />
+    <meta name="apple-mobile-web-app-title" content="Ledgerly" />
+    <link rel="apple-touch-icon" href="/apple-touch-icon.png" />
+    <link rel="icon" type="image/svg+xml" href="/icon.svg" />
+    <link rel="icon" type="image/png" sizes="32x32" href="/favicon.png" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet" />
+    <script>
+      (function() {
+        // Filter out Vite HMR WebSocket connection errors (HMR disabled in AI Studio environment)
+        var origConsoleError = console.error;
+        console.error = function() {
+          var str = Array.prototype.map.call(arguments, function(arg) {
+            if (!arg) return '';
+            if (typeof arg === 'string') return arg;
+            return arg.message || arg.stack || String(arg);
+          }).join(' ');
+          if (
+            str.indexOf('WebSocket closed without opened') !== -1 ||
+            str.indexOf('[vite] failed to connect to websocket') !== -1 ||
+            str.indexOf('vite-hmr') !== -1
+          ) {
+            return;
+          }
+          return origConsoleError.apply(console, arguments);
+        };
+
+        window.addEventListener('error', function(event) {
+          var msg = event && (event.message || (event.error && event.error.message)) || '';
+          if (
+            msg.indexOf('WebSocket') !== -1 ||
+            msg.indexOf('[vite]') !== -1 ||
+            msg.indexOf('vite-hmr') !== -1
+          ) {
+            event.preventDefault();
+            event.stopImmediatePropagation();
+            return true;
+          }
+        }, true);
+
+        window.addEventListener('unhandledrejection', function(event) {
+          var msg = (event && event.reason && (event.reason.message || String(event.reason))) || '';
+          if (
+            msg.indexOf('WebSocket') !== -1 ||
+            msg.indexOf('[vite]') !== -1 ||
+            msg.indexOf('vite-hmr') !== -1
+          ) {
+            event.preventDefault();
+            event.stopImmediatePropagation();
+          }
+        }, true);
+
+        try {
+          var saved = localStorage.getItem('ledgerly_theme');
+          if (saved === 'dark' || (!saved && window.matchMedia('(prefers-color-scheme: dark)').matches)) {
+            document.documentElement.classList.add('dark');
+          } else {
+            document.documentElement.classList.remove('dark');
+          }
+        } catch (e) {}
+      })();
+    </script>
+  </head>
+  <body>
+    <div id="root"></div>
+    <script type="module" src="/src/main.tsx"></script>
+  </body>
+</html>
+

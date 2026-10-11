@@ -1,0 +1,37 @@
+@import "tailwindcss";
+
+@custom-variant dark (&:where(.dark, .dark *));
+
+@layer base {
+  html {
+    -webkit-tap-highlight-color: transparent;
+  }
+  html.dark {
+    color-scheme: dark;
+    background-color: #020617;
+  }
+  body {
+    font-family: 'Inter', -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Helvetica, Arial, sans-serif;
+  }
+  .dark body {
+    background-color: #020617;
+    color: #f8fafc;
+  }
+}
+
+@keyframes donutSpinClockwise {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
+}
+
+.animate-donut-spin {
+  animation: donutSpinClockwise 11s linear infinite;
+  transform-origin: center center;
+  will-change: transform;
+  -webkit-backface-visibility: hidden;
+  backface-visibility: hidden;
+}
