@@ -21,6 +21,7 @@ import { TagModal } from './components/modals/TagModal';
 import { CreateModeModal } from './components/modals/CreateModeModal';
 import { EditProfileModal } from './components/modals/EditProfileModal';
 import { PinLockScreen } from './components/auth/PinLockScreen';
+import { GmailRequiredModal } from './components/modals/GmailRequiredModal';
 import { ShieldCheck, RefreshCw, LayoutDashboard, Receipt, Repeat, PieChart, Menu, Eye, Plus } from 'lucide-react';
 
 function AppContent() {
@@ -42,6 +43,7 @@ function AppContent() {
     isViewOnly,
     exitViewOnly,
     isPinLocked,
+    hasEnteredGmail,
   } = useFinance();
 
   if (loading) {
@@ -57,6 +59,11 @@ function AppContent() {
         </p>
       </div>
     );
+  }
+
+  // Mandatory Gmail Registration Guard for first-time users before accessing the app
+  if (!isViewOnly && !hasEnteredGmail) {
+    return <GmailRequiredModal />;
   }
 
   // Owner PIN Protection Guard: View-only shared users NEVER see or enter PIN

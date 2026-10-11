@@ -200,6 +200,11 @@ interface FinanceContextType {
   lockApp: () => void;
   unlockApp: () => void;
   refreshPinStatus: () => Promise<PinStatus | null>;
+
+  // Mandatory Gmail Registration for first-time users
+  hasEnteredGmail: boolean;
+  saveUserGmail: (gmail: string) => Promise<void>;
+  promptGmailModal: () => void;
 }
 
 const FinanceContext = createContext<FinanceContextType | undefined>(undefined);
@@ -323,14 +328,14 @@ export function FinanceProvider({ children }: { children: ReactNode }) {
   };
 
   const [profile, setProfile] = useState<UserProfile>(() => {
-    let initialEmail = getApiOwnerEmail() || 'ravihr5000@gmail.com';
+    let initialEmail = getApiOwnerEmail() || '';
     try {
       if (typeof window !== 'undefined') {
         const saved = localStorage.getItem('ledgerly_user_email');
         if (saved && saved.trim()) initialEmail = saved.trim().toLowerCase();
       }
     } catch {}
-    const defaultName = initialEmail.includes('@') ? initialEmail.split('@')[0] : 'Owner';
+    const defaultName = initialEmail && initialEmail.includes('@') ? initialEmail.split('@')[0] : 'Owner';
     const cleanName = defaultName ? defaultName.charAt(0).toUpperCase() + defaultName.slice(1) : 'Owner';
     return {
       name: cleanName,
@@ -803,6 +808,59 @@ export function FinanceProvider({ children }: { children: ReactNode }) {
     } catch (e) {}
     setIsBackgroundHidden(false);
     setIsPinAuthenticated(true);
+  };
+
+  // Mandatory Gmail Registration for first-time users
+  const [hasEnteredGmail, setHasEnteredGmail] = useState<boolean>(() => {
+    try {
+      if (typeof window !== 'undefined') {
+        const confirmed = localStorage.getItem('ledgerly_gmail_confirmed') === 'true';
+        const saved = localStorage.getItem('ledgerly_user_email');
+        if (confirmed && saved && saved.trim() && /^[^\s@]+@(gmail\.com|googlemail\.com)$/i.test(saved.trim())) {
+          return true;
+        }
+      }
+    } catch {}
+    return false;
+  });
+
+  const saveUserGmail = async (rawEmail: string): Promise<void> => {
+    const cleanEmail = rawEmail.trim().toLowerCase();
+    const rawPrefix = cleanEmail.split('@')[0] || 'Owner';
+    const cleanName = rawPrefix ? rawPrefix.charAt(0).toUpperCase() + rawPrefix.slice(1) : 'Owner';
+
+    try {
+      if (typeof window !== 'undefined') {
+        localStorage.setItem('ledgerly_user_email', cleanEmail);
+        localStorage.setItem('ledgerly_gmail_confirmed', 'true');
+      }
+    } catch (e) {
+      console.warn('Failed saving to localStorage', e);
+    }
+
+    setApiOwnerEmail(cleanEmail);
+    realtimeSync.connect(cleanEmail);
+
+    try {
+      const updatedProfile = await api.updateProfile({
+        name: cleanName,
+        email: cleanEmail,
+      });
+      setProfile(updatedProfile);
+    } catch {
+      setProfile((prev) => ({
+        ...prev,
+        email: cleanEmail,
+        name: cleanName,
+      }));
+    }
+
+    await refreshAll();
+    setHasEnteredGmail(true);
+  };
+
+  const promptGmailModal = () => {
+    setHasEnteredGmail(false);
   };
 
   const refreshAll = async () => {
@@ -1785,6 +1843,9 @@ export function FinanceProvider({ children }: { children: ReactNode }) {
         lockApp,
         unlockApp,
         refreshPinStatus,
+        hasEnteredGmail,
+        saveUserGmail,
+        promptGmailModal,
       }}
     >
       {children}
