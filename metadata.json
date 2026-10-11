@@ -1,0 +1,8 @@
+{
+  "name": "Ledgerly Personal Finance",
+  "description": "Personal finance management web app with transaction tracking, budgets, recurring detection, and custom financial modes.",
+  "requestFramePermissions": [],
+  "majorCapabilities": [
+    "MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"
+  ]
+}

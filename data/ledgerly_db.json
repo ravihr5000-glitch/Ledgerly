@@ -1,0 +1,381 @@
+{
+  "ownerEmail": "ravihr5000@gmail.com",
+  "profile": {
+    "name": "Ravi",
+    "email": "ravihr5000@gmail.com",
+    "avatarUrl": "",
+    "updatedAt": "2026-10-08T06:16:05.000Z"
+  },
+  "preferences": {
+    "selectedPeriod": "Today",
+    "totalAssets": 0,
+    "totalLiabilities": 0,
+    "netWorthConfigured": false,
+    "resetTimestamp": "2026-10-07T15:56:17.341Z",
+    "timezone": "America/Los_Angeles"
+  },
+  "categories": [
+    "Expense",
+    "Income",
+    "Needs review",
+    "Other",
+    "Client Revenue",
+    "Groceries",
+    "Utilities",
+    "Books"
+  ],
+  "accounts": [
+    "Main Checking",
+    "Everyday Visa",
+    "Rewards Card",
+    "Cash"
+  ],
+  "tags": [
+    "Coffee"
+  ],
+  "transactions": [
+    {
+      "id": "tx_1791740265609_ztubuuy",
+      "date": "2026-06-28",
+      "merchant": "Narayan",
+      "category": "Expense",
+      "paymentMode": "UPI",
+      "account": "UPI",
+      "modeId": "business",
+      "tags": [],
+      "amount": 10000,
+      "type": "expense",
+      "receiptAttached": false,
+      "fingerprint": "2026-06-28|narayan|10000.00|upi",
+      "source": "csv",
+      "createdAt": "2026-10-11T17:37:45.609Z",
+      "budgetId": "bgt_1791740240367_m9nle"
+    },
+    {
+      "id": "tx_1791740265609_4y5yhd7",
+      "date": "2026-06-27",
+      "merchant": "Narayan",
+      "category": "Expense",
+      "paymentMode": "UPI",
+      "account": "UPI",
+      "modeId": "business",
+      "tags": [],
+      "amount": 5000,
+      "type": "expense",
+      "receiptAttached": false,
+      "fingerprint": "2026-06-27|narayan|5000.00|upi",
+      "source": "csv",
+      "createdAt": "2026-10-11T17:37:45.609Z",
+      "budgetId": "bgt_1791740240367_m9nle"
+    },
+    {
+      "id": "tx_1791740265609_9dhoufe",
+      "date": "2026-06-20",
+      "merchant": "Sonu / Pinki",
+      "category": "Expense",
+      "paymentMode": "UPI",
+      "account": "UPI",
+      "modeId": "business",
+      "tags": [],
+      "amount": 500,
+      "type": "expense",
+      "receiptAttached": false,
+      "fingerprint": "2026-06-20|sonu / pinki|500.00|upi",
+      "source": "csv",
+      "createdAt": "2026-10-11T17:37:45.609Z",
+      "budgetId": "bgt_1791740240367_m9nle"
+    },
+    {
+      "id": "tx_1791740265609_utloold",
+      "date": "2026-06-19",
+      "merchant": "Anjan",
+      "category": "Expense",
+      "paymentMode": "UPI",
+      "account": "UPI",
+      "modeId": "business",
+      "tags": [],
+      "amount": 600,
+      "type": "expense",
+      "receiptAttached": false,
+      "fingerprint": "2026-06-19|anjan|600.00|upi",
+      "source": "csv",
+      "createdAt": "2026-10-11T17:37:45.609Z",
+      "budgetId": "bgt_1791740240367_m9nle"
+    },
+    {
+      "id": "tx_1791740265609_yq7vd7u",
+      "date": "2026-06-17",
+      "merchant": "Sonu / Pinki",
+      "category": "Expense",
+      "paymentMode": "UPI",
+      "account": "UPI",
+      "modeId": "business",
+      "tags": [],
+      "amount": 500,
+      "type": "expense",
+      "receiptAttached": false,
+      "fingerprint": "2026-06-17|sonu / pinki|500.00|upi",
+      "source": "csv",
+      "createdAt": "2026-10-11T17:37:45.609Z",
+      "budgetId": "bgt_1791740240367_m9nle"
+    },
+    {
+      "id": "tx_1791740265609_5qskha1",
+      "date": "2026-06-16",
+      "merchant": "Biscuit",
+      "category": "Expense",
+      "paymentMode": "UPI",
+      "account": "UPI",
+      "modeId": "business",
+      "tags": [],
+      "amount": 20,
+      "type": "expense",
+      "receiptAttached": false,
+      "fingerprint": "2026-06-16|biscuit|20.00|upi",
+      "source": "csv",
+      "createdAt": "2026-10-11T17:37:45.609Z",
+      "budgetId": "bgt_1791740240367_m9nle"
+    },
+    {
+      "id": "tx_1791740265609_beq22tn",
+      "date": "2026-06-16",
+      "merchant": "Sonu / Pinki",
+      "category": "Expense",
+      "paymentMode": "UPI",
+      "account": "UPI",
+      "modeId": "business",
+      "tags": [],
+      "amount": 2000,
+      "type": "expense",
+      "receiptAttached": false,
+      "fingerprint": "2026-06-16|sonu / pinki|2000.00|upi",
+      "source": "csv",
+      "createdAt": "2026-10-11T17:37:45.609Z",
+      "budgetId": "bgt_1791740240367_m9nle"
+    },
+    {
+      "id": "tx_1791740265609_sgy6c5t",
+      "date": "2026-06-15",
+      "merchant": "Mr Akash Das",
+      "category": "Expense",
+      "paymentMode": "UPI",
+      "account": "UPI",
+      "modeId": "business",
+      "tags": [],
+      "amount": 23000,
+      "type": "expense",
+      "receiptAttached": false,
+      "fingerprint": "2026-06-15|mr akash das|23000.00|upi",
+      "source": "csv",
+      "createdAt": "2026-10-11T17:37:45.609Z",
+      "budgetId": "bgt_1791740240367_m9nle"
+    },
+    {
+      "id": "tx_1791740265610_w1684bb",
+      "date": "2026-06-12",
+      "merchant": "Sonu / Pinki",
+      "category": "Expense",
+      "paymentMode": "UPI",
+      "account": "UPI",
+      "modeId": "business",
+      "tags": [],
+      "amount": 1400,
+      "type": "expense",
+      "receiptAttached": false,
+      "fingerprint": "2026-06-12|sonu / pinki|1400.00|upi",
+      "source": "csv",
+      "createdAt": "2026-10-11T17:37:45.610Z",
+      "budgetId": "bgt_1791740240367_m9nle"
+    },
+    {
+      "id": "tx_1791740265610_r0veuvw",
+      "date": "2026-06-11",
+      "merchant": "Chandra Bhan",
+      "category": "Expense",
+      "paymentMode": "UPI",
+      "account": "UPI",
+      "modeId": "business",
+      "tags": [],
+      "amount": 1500,
+      "type": "expense",
+      "receiptAttached": false,
+      "fingerprint": "2026-06-11|chandra bhan|1500.00|upi",
+      "source": "csv",
+      "createdAt": "2026-10-11T17:37:45.610Z",
+      "budgetId": "bgt_1791740240367_m9nle"
+    },
+    {
+      "id": "tx_1791740265610_febiiyb",
+      "date": "2026-06-11",
+      "merchant": "Mohti S/O jAi Ram",
+      "category": "Expense",
+      "paymentMode": "UPI",
+      "account": "UPI",
+      "modeId": "business",
+      "tags": [],
+      "amount": 650,
+      "type": "expense",
+      "receiptAttached": false,
+      "fingerprint": "2026-06-11|mohti s/o jai ram|650.00|upi",
+      "source": "csv",
+      "createdAt": "2026-10-11T17:37:45.610Z",
+      "budgetId": "bgt_1791740240367_m9nle"
+    },
+    {
+      "id": "tx_1791740265610_2w5xelm",
+      "date": "2026-06-10",
+      "merchant": "Naryan",
+      "category": "Expense",
+      "paymentMode": "UPI",
+      "account": "UPI",
+      "modeId": "business",
+      "tags": [],
+      "amount": 2000,
+      "type": "expense",
+      "receiptAttached": false,
+      "fingerprint": "2026-06-10|naryan|2000.00|upi",
+      "source": "csv",
+      "createdAt": "2026-10-11T17:37:45.610Z",
+      "budgetId": "bgt_1791740240367_m9nle"
+    },
+    {
+      "id": "tx_1791740127288_5zp1pg4",
+      "date": "2026-07-08",
+      "merchant": "client",
+      "category": "Income",
+      "paymentMode": "Bank Transfer",
+      "account": "Bank Transfer",
+      "modeId": "business",
+      "tags": [],
+      "amount": 50000,
+      "type": "expense",
+      "receiptAttached": false,
+      "budgetId": "bgt_1791726909479_cne03",
+      "fingerprint": "2026-07-08|client|50000.00|bank transfer",
+      "source": "manual",
+      "createdAt": "2026-10-11T17:35:27.288Z"
+    }
+  ],
+  "budgets": [
+    {
+      "id": "bgt_1791740240367_m9nle",
+      "name": "Business Budget - 01",
+      "category": "Expense",
+      "monthlyLimit": 50000,
+      "active": true,
+      "date": "2026-06-08",
+      "createdAt": "2026-10-11T17:37:20.367Z"
+    }
+  ],
+  "goals": [],
+  "recurring": [],
+  "ignoredPatterns": [],
+  "rules": [],
+  "documents": [
+    {
+      "id": "doc_1791475245683_xfju4",
+      "filename": "1791475245669_2bsih2_Ledgerly_Payment_Receipt_Confirmation.png",
+      "originalName": "Ledgerly Payment Receipt Confirmation.png",
+      "mimeType": "image/png",
+      "sizeBytes": 1151067,
+      "source": "upload",
+      "status": "stored",
+      "storagePath": "/app/applet/data/vault/1791475245669_2bsih2_Ledgerly_Payment_Receipt_Confirmation.png",
+      "createdAt": "2026-10-08T16:00:45.683Z"
+    }
+  ],
+  "driveSync": {
+    "lastSyncTimestamp": null,
+    "status": "idle",
+    "folderName": "Ledgerly Financial Inbox",
+    "processedFileIds": [],
+    "stats": {
+      "imported": 0,
+      "duplicates": 0,
+      "review": 0,
+      "errors": 0
+    }
+  },
+  "modes": [
+    {
+      "id": "business",
+      "name": "Business",
+      "description": "Company operations, revenues, vendor payouts & operational costs",
+      "icon": "Briefcase",
+      "color": "#6558D3",
+      "startingBalance": -10000,
+      "categories": [
+        "Expense",
+        "Other"
+      ],
+      "settings": {
+        "allowReceipts": true,
+        "allowTags": true,
+        "allowNotes": true
+      },
+      "isDefault": true,
+      "createdAt": "2026-10-07T17:12:12.615Z"
+    },
+    {
+      "id": "personal",
+      "name": "Personal",
+      "description": "Household living expenses, personal savings, groceries & bills",
+      "icon": "User",
+      "color": "#10B981",
+      "startingBalance": 0,
+      "categories": [
+        "Expense",
+        "Other"
+      ],
+      "settings": {
+        "allowReceipts": true,
+        "allowTags": true,
+        "allowNotes": true
+      },
+      "isDefault": true,
+      "createdAt": "2026-10-07T17:12:12.615Z"
+    },
+    {
+      "id": "combined",
+      "name": "Combined",
+      "description": "Consolidated holistic overview combining all financial modes",
+      "icon": "Layers",
+      "color": "#3B82F6",
+      "startingBalance": 0,
+      "categories": [
+        "Expense",
+        "Other"
+      ],
+      "settings": {
+        "allowReceipts": true,
+        "allowTags": true,
+        "allowNotes": true
+      },
+      "isDefault": true,
+      "createdAt": "2026-10-07T17:12:12.615Z"
+    }
+  ],
+  "activeModeId": "business",
+  "shareConfig": {
+    "enabled": true,
+    "token": "view_1791527272623_1j69ucjv70nx10no",
+    "tokens": [
+      "view_1791525373616_86prjb6thy7omhqg",
+      "view_1791525724571_pyteorjytwyzc6u2",
+      "view_1791526701736_trfi0ycinkzdpaz2",
+      "view_1791527167424_b19ojm7xqr1fkkf8",
+      "view_1791527179620_1to7zrb4v5nc15e3",
+      "view_1791527272623_1j69ucjv70nx10no"
+    ],
+    "createdAt": "2026-10-09T06:27:52.623Z",
+    "allowModes": [
+      "all"
+    ]
+  },
+  "securityConfig": {
+    "pinEnabled": false,
+    "pinHash": "",
+    "recoveryCodeHash": "",
+    "updatedAt": "2026-10-09T09:32:32.718Z"
+  }
+}
